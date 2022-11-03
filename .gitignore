@@ -1,0 +1,11 @@
+.idea/
+
+node_modules/
+dist/
+
+.pnpm-store/
+pnpm-lock.yaml
+pnpm-debug.log*
+
+logs/
+*.log

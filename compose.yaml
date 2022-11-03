@@ -1,0 +1,15 @@
+services:
+  app-node-cli:
+    build: ./docker/development/node/
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+
+  app:
+    build: ./docker/development/node/
+    working_dir: /app/
+    volumes:
+      - ./app/:/app/
+    ports:
+      - '1234:80'
+    command: pnpm run dev
