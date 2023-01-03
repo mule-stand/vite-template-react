@@ -1,3 +1,3 @@
 FROM node:19-alpine
 
-RUN npm install --global pnpm
+RUN npm install --global pnpm@latest
